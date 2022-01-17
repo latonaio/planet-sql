@@ -2,7 +2,7 @@ CREATE TABLE `planet_general_data`
 (
   `CodeName`                   varchar(20) NOT NULL,
   `Description`                varchar(40) DEFAULT NULL,
-  `CalenderType`               varchar(6) NOT NULL,
+  `CalenderType`               varchar(6) DEFAULT NULL,
   `EstimatedBirthYear`         varchar(20) DEFAULT NULL,
   `EstimatedDeathYear`         varchar(80) DEFAULT NULL,  
   `BirthYear`                  varchar(20) DEFAULT NULL,
