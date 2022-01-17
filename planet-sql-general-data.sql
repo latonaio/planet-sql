@@ -1,6 +1,8 @@
 CREATE TABLE `planet_general_data`
 (
   `CodeName`                   varchar(20) NOT NULL,
+  `PlanetFrom`                 varchar(20) DEFAULT NULL,
+  `PlanetType`                 varchar(20) DEFAULT NULL,
   `Description`                varchar(40) DEFAULT NULL,
   `CalenderType`               varchar(6) DEFAULT NULL,
   `EstimatedBirthYear`         varchar(20) DEFAULT NULL,
