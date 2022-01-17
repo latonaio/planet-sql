@@ -23,6 +23,8 @@ CREATE TABLE `planet_orbital_characteristic_data`
   `ArgumentOfPerihelion`       varchar(20) DEFAULT NULL,
   `ArgumentOfPerihelionUnit`   varchar(5) DEFAULT NULL,
   `NumberOfSatellites`         varchar(10) DEFAULT NULL,
+  `CreatedDateTime`            varchar(20) DEFAULT NULL,
+  `LastModifiedDateTime`       varchar(20) DEFAULT NULL,
     PRIMARY KEY (`CodeName`),
     CONSTRAINT `PlanetOrbitalCharacteristicData_fk` FOREIGN KEY (`CodeName`) REFERENCES `planet_general_data` (`CodeName`)
 ) ENGINE = InnoDB

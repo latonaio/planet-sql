@@ -48,6 +48,8 @@ CREATE TABLE `planet_physical_characteristic_data`
   `ApparentMagnitudeUnit`      varchar(5) DEFAULT NULL,
   `AngularDiameter`            varchar(20) DEFAULT NULL,
   `AngularDiameterUnit`        varchar(5) DEFAULT NULL,
+  `CreatedDateTime`            varchar(20) DEFAULT NULL,
+  `LastModifiedDateTime`       varchar(20) DEFAULT NULL,
     PRIMARY KEY (`CodeName`),
     CONSTRAINT `PlanetPhysicalCharacteristicData_fk` FOREIGN KEY (`CodeName`) REFERENCES `planet_general_data` (`CodeName`)
 ) ENGINE = InnoDB
