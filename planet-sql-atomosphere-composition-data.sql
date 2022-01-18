@@ -4,7 +4,7 @@ CREATE TABLE `planet_atomosphere_composition_data`
   `CompositionNode`            varchar(10) DEFAULT NULL,
   `Material`                   varchar(40) DEFAULT NULL,
   `MaterialName`               varchar(100) DEFAULT NULL,
-  `CompositionRatio`           varchar(20) DEFAULT NULL,
+  `CompositionRatio`           varchar(10) DEFAULT NULL,
   `CompositionNodeText`        varchar(255) DEFAULT NULL,
   `CreatedDateTime`            varchar(20) DEFAULT NULL,
   `LastModifiedDateTime`       varchar(20) DEFAULT NULL,
