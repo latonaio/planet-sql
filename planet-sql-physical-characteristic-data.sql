@@ -1,6 +1,6 @@
 CREATE TABLE `planet_physical_characteristic_data`
 (
-  `CodeName`                   varchar(20) NOT NULL,
+  `Planet`                     varchar(20) NOT NULL,
   `MeanRadius`                 varchar(20) DEFAULT NULL,
   `MeanRadiusUnit`             varchar(5) DEFAULT NULL,
   `EquatorialRadius`           varchar(20) DEFAULT NULL,
@@ -50,7 +50,7 @@ CREATE TABLE `planet_physical_characteristic_data`
   `AngularDiameterUnit`        varchar(5) DEFAULT NULL,
   `CreatedDateTime`            varchar(20) DEFAULT NULL,
   `LastModifiedDateTime`       varchar(20) DEFAULT NULL,
-    PRIMARY KEY (`CodeName`),
-    CONSTRAINT `PlanetPhysicalCharacteristicData_fk` FOREIGN KEY (`CodeName`) REFERENCES `planet_general_data` (`CodeName`)
+    PRIMARY KEY (`Planet`),
+    CONSTRAINT `PlanetPhysicalCharacteristicData_fk` FOREIGN KEY (`Planet`) REFERENCES `planet_general_data` (`Planet`)
 ) ENGINE = InnoDB
   DEFAULT CHARSET = utf8mb4;

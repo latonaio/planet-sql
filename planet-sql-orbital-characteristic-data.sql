@@ -1,6 +1,6 @@
 CREATE TABLE `planet_orbital_characteristic_data`
 (
-  `CodeName`                   varchar(20) NOT NULL,
+  `Planet`                     varchar(20) NOT NULL,
   `Aphelion`                   varchar(20) DEFAULT NULL,
   `AphelionUnit`               varchar(5) DEFAULT NULL,
   `Perihelion`                 varchar(20) DEFAULT NULL,
@@ -25,7 +25,7 @@ CREATE TABLE `planet_orbital_characteristic_data`
   `NumberOfSatellites`         varchar(10) DEFAULT NULL,
   `CreatedDateTime`            varchar(20) DEFAULT NULL,
   `LastModifiedDateTime`       varchar(20) DEFAULT NULL,
-    PRIMARY KEY (`CodeName`),
-    CONSTRAINT `PlanetOrbitalCharacteristicData_fk` FOREIGN KEY (`CodeName`) REFERENCES `planet_general_data` (`CodeName`)
+    PRIMARY KEY (`Planet`),
+    CONSTRAINT `PlanetOrbitalCharacteristicData_fk` FOREIGN KEY (`Planet`) REFERENCES `planet_general_data` (`Planet`)
 ) ENGINE = InnoDB
   DEFAULT CHARSET = utf8mb4;
